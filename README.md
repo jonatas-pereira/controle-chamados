@@ -9,36 +9,36 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 
 ## Descrição
 
-Aplicação web desenvolvida para gerenciamento de chamados, permitindo cadastrar, visualizar, editar, excluir e filtrar chamados de forma simples e intuitiva.
+Aplicação web desenvolvida para gerenciamento de chamados, permitindo cadastrar, visualizar, editar, excluir e filtrar chamados.
 
-A aplicação consome uma API REST desenvolvida em NestJS e apresenta uma interface responsiva construída com Vue.js.
+A aplicação consome uma API REST desenvolvida em NestJS e possui uma interface construída com Vue.js.
 
 ## Tecnologias Utilizadas
 
 ### Vue.js
 
-O Vue.js foi escolhido por sua simplicidade, organização baseada em componentes e facilidade de integração com APIs REST.
+Utilizado para construção da interface através de componentes reutilizáveis e reativos.
 
 ### TypeScript
 
-O TypeScript foi utilizado para proporcionar maior segurança no desenvolvimento através da tipagem estática, reduzindo erros e melhorando a manutenção do código.
+Utilizado para fornecer tipagem estática e melhorar a manutenção do código.
 
 ### Vue Router
 
-Responsável pelo gerenciamento das rotas da aplicação, permitindo a navegação entre as páginas sem recarregamento do navegador.
+Responsável pelo gerenciamento das rotas da aplicação.
 
 ### Axios
 
-Utilizado para realizar as requisições HTTP para a API.
+Utilizado para comunicação com a API.
 
 ### Tailwind CSS
 
-Escolhido para agilizar a construção da interface, fornecendo classes utilitárias que facilitam a criação de layouts modernos e responsivos.
+Utilizado para estilização da interface de forma rápida e consistente.
 
 ## Funcionalidades
 
+* Cadastro de chamados
 * Listagem de chamados
-* Cadastro de novos chamados
 * Visualização de detalhes de um chamado
 * Edição de chamados
 * Exclusão de chamados
@@ -52,36 +52,13 @@ Escolhido para agilizar a construção da interface, fornecendo classes utilitá
 * Node.js 18 ou superior
 * npm
 
-## Clonando o projeto
-
-```bash
-git clone <url-do-repositorio>
-cd <nome-do-projeto>
-```
-
-## Instalando as dependências
+## Instalação
 
 ```bash
 npm install
 ```
 
-## Configuração da API
-
-Crie um arquivo `.env` na raiz do projeto:
-
-```env
-VITE_API_URL=http://localhost:3000
-```
-
-Configure a instância do Axios para utilizar a variável:
-
-```ts
-const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL
-})
-```
-
-## Executando a aplicação
+## Executando o projeto
 
 ```bash
 npm run dev
@@ -99,9 +76,6 @@ http://localhost:5173
 npm run build
 ```
 
-## Observações
+## Observação
 
-Para que a aplicação funcione corretamente, a API backend deve estar em execução.
-
-Backend: NestJS + TypeORM + SQLite.
-
+Para utilização completa da aplicação, o backend deve estar em execução.
